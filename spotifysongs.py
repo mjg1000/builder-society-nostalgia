@@ -52,3 +52,8 @@ if __name__ == "__main__":
                 print(songs[0].uri)
             else:
                 print("No songs found")
+
+def getURI(date):
+    songs = searchSongs(date)
+
+    return songs[0].uri
